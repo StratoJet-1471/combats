@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main-script.js"></script>
+    <title>Combats</title>
+</head>
+<body> 
+    <div class="wrapper">   
+        <div class="fighter-panels-wrapper">
+            <div id="hero" class="main-panel">
+                <span class="name-text" style="margin-bottom: 5px">Hero name</span>
+                <img class="avatar" style="margin-bottom: 5px" src="img/fighter-1.jpg" alt="">
+                <div class="health-data-container">
+                    <div class="health-indicator">
+                        <div class="health-indicator__ind-line"></div>
+                    </div>
+                    <span class="health-text">100%</span>
+                </div>
+                <div style="margin-top: 10px;" class="fighting-controls-panel">
+                    <span>Управление атакой</span>
+                    <div class="attack-panel">
+                        <div class="attack-panel__tool-choice">
+                            <span>Чем:</span>
+                            <div>
+                                <input type="radio" name="tool" id="head"><label for="head">Головой</label><br>
+                                <input type="radio" name="tool" id="fist" checked><label for="fist">Кулаком</label><br>
+                                <input type="radio" name="tool" id="foot"><label for="foot">Ногой</label>
+                            </div>
+                        </div>
+                        <div class="attack-panel__target-choice">
+                            <span>Куда:</span>
+                            <div>
+                                <input type="radio" name="target" id="to-head" checked><label for="to-head">В голову</label><br>
+                                <input type="radio" name="target" id="to-chest"><label for="to-chest">В грудь</label><br>                        
+                                <input type="radio" name="target" id="to-belly"><label for="to-belly">В живот</label><br>
+                                <input type="radio" name="target" id="to-eggs"><label for="to-eggs">В пах</label><br>
+                                <input type="radio" name="target" id="to-legs"><label for="to-legs">По ногам</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span style="margin-top: 10px;">Управление защитой</span>
+                    <div class="defence-panel">
+                        <div>
+                            <input type="radio" name="defence" id="protect-head" checked><label for="protect-head">Защитить голову</label><br>
+                            <input type="radio" name="defence" id="protect-chest"><label for="protect-chest">Защитить грудь</label><br>                        
+                            <input type="radio" name="defence" id="protect-belly"><label for="protect-belly">Защитить живот</label><br>
+                            <input type="radio" name="defence" id="protect-eggs"><label for="protect-eggs">Защитить пах</label><br>
+                            <input type="radio" name="defence" id="protect-legs"><label for="protect-legs">Защитить ноги</label>
+                        </div>
+                    </div>
+
+                    <button id="attack-btn" style="margin-top: 10px;" class="uni-button">Врезать!</button>
+                </div>
+            </div>
+
+            <div id="enemy" class="main-panel">
+                <span class="name-text" style="margin-bottom: 5px">Enemy name</span>
+                <img class="avatar" style="margin-bottom: 5px" src="img/fighter-2.jpg" alt="">
+                <div class="health-data-container">
+                    <div class="health-indicator">
+                        <div class="health-indicator__ind-line"></div>
+                    </div>
+                    <span class="health-text">100%</span>
+                </div>        
+            </div>        
+        </div>
+
+        <div class="messages-window"></div>
+
+        <button id="reset-btn" style="margin-top: 10px; border: 1px solid black" class="uni-button">Новый бой</button>
+    </div>
+</body>
+</html>
